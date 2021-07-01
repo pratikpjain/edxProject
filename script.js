@@ -21,7 +21,7 @@ function compute()
 {
     var amount = document.getElementById("principal");
     var amt = parseInt(amount.value);
-    if(amt == 0) {
+    if(amt <= 0) {
       alert("Amount Should be greater than Zero")
       return;
     }
