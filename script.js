@@ -21,6 +21,10 @@ function compute()
 {
     var amount = document.getElementById("principal");
     var amt = parseInt(amount.value);
+    if(amt == 0) {
+      alert("Amount Should be greater than Zero")
+      return;
+    }
     var rate = document.getElementById("demo");
     var rt = parseFloat(rate.innerText);
     var years = document.getElementById("years");
