@@ -1,0 +1,17 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Simple Interest Calculator</h1>
+        <div class = "grid-box">
+            <div>Amount</div> <div><input type="number"  id="principal"></div>
+            <div>Interest Rate</div> <div><input type="range" min="0" max="200" value = "105" id="rate"> <span id = "demo"></span>%</div>
+            <div>No. of Years</div> <div><select id="years"></select></div>
+            <div><button onclick="compute()">Compute Interest</button></div><div></div>
+        </div>
+        <div id = "final-result"></div>
+        <p class = "copyright_symbol">&#169; Everyone Can Get Reach</p>
+        <script src="script.js"></script>
+    </body>
+</html>
