@@ -21,12 +21,14 @@ function compute()
 {
     var amount = document.getElementById("principal");
     if(amount.value == "") {
-      alert("Amount Should be greater than Zero")
+      alert("Amount Should be greater than Zero");
+      amount.focus();
       return;
     }
     var amt = parseInt(amount.value);
     if(amt <= 0) {
-      alert("Amount Should be greater than Zero")
+      alert("Amount Should be greater than Zero");
+      amount.focus();
       return;
     }
     var rate = document.getElementById("demo");
